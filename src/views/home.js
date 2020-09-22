@@ -33,7 +33,7 @@ const Home = (props) => {
 
     useEffect(() => {
         props.listar(busca)
-    }, [busca])
+    }, [props, busca])
 
     return (
         <>
@@ -65,7 +65,7 @@ const Home = (props) => {
                                 <p className="mb-0">{f.Title}</p>
                                 <p className="mb-0">{f.Year}</p>
                             </div>
-                        ) : busca ? <p>Loading</p> : busca == '' ? <p>Pesquise um filme</p> : <p>Filme não encontrado</p>}
+                        ) : busca ? <p>Loading</p> : busca === '' ? <p>Pesquise um filme</p> : <p>Filme não encontrado</p>}
                 </div>
             </div>
         </>

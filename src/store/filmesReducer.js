@@ -31,8 +31,7 @@ export const filmesReducer = (state = ESTADO_INICIAL, action) => {
 
 export function listar(busca){
     return dispatch => {
-        axios.get(`${API_URL}?s=${busca}&apikey=${API_KEY}`).
-            then(response => {
+        axios.get(`${API_URL}?s=${busca}&apikey=${API_KEY}`).then(response => {
                 dispatch({
                     type: ACTIONS.LISTAR, 
                     filmes: response.data,
@@ -44,8 +43,7 @@ export function listar(busca){
 
 export function detalhar(id){
     return dispatch => {
-        axios.get(`${API_URL}?i=${id}&apikey=${API_KEY}`).
-            then(response => {
+        axios.get(`${API_URL}?i=${id}&apikey=${API_KEY}`).then(response => {
                 dispatch({
                     type: ACTIONS.DETALHAR, 
                     detalhes: response.data
