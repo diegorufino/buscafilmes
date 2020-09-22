@@ -12,7 +12,7 @@ const Details = (props) => {
 
     useEffect(() => {  
         props.detalhar(id)
-    }, [])
+    }, [props, id])
 
     return(
         <>
