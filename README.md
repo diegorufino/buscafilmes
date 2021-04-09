@@ -5,6 +5,7 @@ Este projeto foi inicializado com [Create React App](https://github.com/facebook
 Esse projeto faz busca de filmes por título, trazendo no Home: 'poster', 'título' e 'ano' , detalhamento e adicionar a favoritos.
 
 In the project directory, you can run:
+'''yarn start'''
 
 ### Baixando projeto
 
@@ -12,15 +13,15 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num di
 
 ### Checkout na Branch
 
-execute o comando 'git checkout busca-filmes'
+execute o comando '''git checkout busca-filmes'''
 
 ### Instalando
 
-execute o comando 'npm i'
+execute o comando '''npm i'''
 
 ### Começando
 
-execute o comando 'yarn start'
+execute o comando '''yarn start'''
 
 ### Features
 
